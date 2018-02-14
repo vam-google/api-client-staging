@@ -5,8 +5,7 @@ package com.google.cloud.dialogflow.v2beta1;
 
 /**
  * <pre>
- * The request message for
- * [Intents.BatchUpdateIntents][google.cloud.dialogflow.v2beta1.Intents.BatchUpdateIntents].
+ * The request message for [Intents.BatchUpdateIntents][google.cloud.dialogflow.v2beta1.Intents.BatchUpdateIntents].
  * </pre>
  *
  * Protobuf type {@code google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest}
@@ -214,8 +213,6 @@ private static final long serialVersionUID = 0L;
   public static final int INTENT_BATCH_URI_FIELD_NUMBER = 2;
   /**
    * <pre>
-   * Warning: Importing intents from a URI is not implemented yet.
-   * This feature is coming soon.
    * The URI to a Google Cloud Storage file containing intents to update or
    * create. The file format can either be a serialized proto (of IntentBatch
    * type) or JSON object. Note: The URI must start with "gs://".
@@ -242,8 +239,6 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * Warning: Importing intents from a URI is not implemented yet.
-   * This feature is coming soon.
    * The URI to a Google Cloud Storage file containing intents to update or
    * create. The file format can either be a serialized proto (of IntentBatch
    * type) or JSON object. Note: The URI must start with "gs://".
@@ -643,8 +638,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message for
-   * [Intents.BatchUpdateIntents][google.cloud.dialogflow.v2beta1.Intents.BatchUpdateIntents].
+   * The request message for [Intents.BatchUpdateIntents][google.cloud.dialogflow.v2beta1.Intents.BatchUpdateIntents].
    * </pre>
    *
    * Protobuf type {@code google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest}
@@ -945,8 +939,6 @@ private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * Warning: Importing intents from a URI is not implemented yet.
-     * This feature is coming soon.
      * The URI to a Google Cloud Storage file containing intents to update or
      * create. The file format can either be a serialized proto (of IntentBatch
      * type) or JSON object. Note: The URI must start with "gs://".
@@ -973,8 +965,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Importing intents from a URI is not implemented yet.
-     * This feature is coming soon.
      * The URI to a Google Cloud Storage file containing intents to update or
      * create. The file format can either be a serialized proto (of IntentBatch
      * type) or JSON object. Note: The URI must start with "gs://".
@@ -1002,8 +992,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Importing intents from a URI is not implemented yet.
-     * This feature is coming soon.
      * The URI to a Google Cloud Storage file containing intents to update or
      * create. The file format can either be a serialized proto (of IntentBatch
      * type) or JSON object. Note: The URI must start with "gs://".
@@ -1023,8 +1011,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Importing intents from a URI is not implemented yet.
-     * This feature is coming soon.
      * The URI to a Google Cloud Storage file containing intents to update or
      * create. The file format can either be a serialized proto (of IntentBatch
      * type) or JSON object. Note: The URI must start with "gs://".
@@ -1042,8 +1028,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Importing intents from a URI is not implemented yet.
-     * This feature is coming soon.
      * The URI to a Google Cloud Storage file containing intents to update or
      * create. The file format can either be a serialized proto (of IntentBatch
      * type) or JSON object. Note: The URI must start with "gs://".
@@ -1571,13 +1555,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setParent(agentName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setParentWithAgentName(com.google.cloud.dialogflow.v2beta1.AgentName value) {
       if (value == null) {
         return setParent("");
@@ -1585,13 +1562,6 @@ private static final long serialVersionUID = 0L;
       return setParent(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * AgentName.parse(protoBuilder.getParent());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.dialogflow.v2beta1.AgentName getParentAsAgentName() {
       java.lang.String str = getParent();
       if (str.isEmpty()) {
@@ -1602,13 +1572,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.dialogflow.v2beta1.BatchUpdateIntentsRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * AgentName.parse(protoObject.getParent());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.dialogflow.v2beta1.AgentName getParentAsAgentName() {
     java.lang.String str = getParent();
     if (str.isEmpty()) {

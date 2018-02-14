@@ -5,8 +5,7 @@ package com.google.cloud.dialogflow.v2beta1;
 
 /**
  * <pre>
- * The request message for
- * [SessionEntityTypes.GetSessionEntityType][google.cloud.dialogflow.v2beta1.SessionEntityTypes.GetSessionEntityType].
+ * The request message for [SessionEntityTypes.GetSessionEntityType][google.cloud.dialogflow.v2beta1.SessionEntityTypes.GetSessionEntityType].
  * </pre>
  *
  * Protobuf type {@code google.cloud.dialogflow.v2beta1.GetSessionEntityTypeRequest}
@@ -280,8 +279,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message for
-   * [SessionEntityTypes.GetSessionEntityType][google.cloud.dialogflow.v2beta1.SessionEntityTypes.GetSessionEntityType].
+   * The request message for [SessionEntityTypes.GetSessionEntityType][google.cloud.dialogflow.v2beta1.SessionEntityTypes.GetSessionEntityType].
    * </pre>
    *
    * Protobuf type {@code google.cloud.dialogflow.v2beta1.GetSessionEntityTypeRequest}
@@ -525,13 +523,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(sessionEntityTypeName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithSessionEntityTypeName(com.google.cloud.dialogflow.v2beta1.SessionEntityTypeName value) {
       if (value == null) {
         return setName("");
@@ -539,13 +530,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * SessionEntityTypeName.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.dialogflow.v2beta1.SessionEntityTypeName getNameAsSessionEntityTypeName() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -556,13 +540,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.dialogflow.v2beta1.GetSessionEntityTypeRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * SessionEntityTypeName.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.dialogflow.v2beta1.SessionEntityTypeName getNameAsSessionEntityTypeName() {
     java.lang.String str = getName();
     if (str.isEmpty()) {
