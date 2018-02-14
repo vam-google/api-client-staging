@@ -5,8 +5,7 @@ package com.google.cloud.dialogflow.v2beta1;
 
 /**
  * <pre>
- * The request message for
- * [Agents.ExportAgent][google.cloud.dialogflow.v2beta1.Agents.ExportAgent].
+ * The request message for [Agents.ExportAgent][google.cloud.dialogflow.v2beta1.Agents.ExportAgent].
  * </pre>
  *
  * Protobuf type {@code google.cloud.dialogflow.v2beta1.ExportAgentRequest}
@@ -137,8 +136,6 @@ private static final long serialVersionUID = 0L;
   private volatile java.lang.Object agentUri_;
   /**
    * <pre>
-   * Warning: Exporting agents to a URI is not implemented yet.
-   * This feature is coming soon.
    * Optional. The Google Cloud Storage URI to export the agent to.
    * Note: The URI must start with
    * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -160,8 +157,6 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * Warning: Exporting agents to a URI is not implemented yet.
-   * This feature is coming soon.
    * Optional. The Google Cloud Storage URI to export the agent to.
    * Note: The URI must start with
    * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -345,8 +340,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message for
-   * [Agents.ExportAgent][google.cloud.dialogflow.v2beta1.Agents.ExportAgent].
+   * The request message for [Agents.ExportAgent][google.cloud.dialogflow.v2beta1.Agents.ExportAgent].
    * </pre>
    *
    * Protobuf type {@code google.cloud.dialogflow.v2beta1.ExportAgentRequest}
@@ -585,8 +579,6 @@ private static final long serialVersionUID = 0L;
     private java.lang.Object agentUri_ = "";
     /**
      * <pre>
-     * Warning: Exporting agents to a URI is not implemented yet.
-     * This feature is coming soon.
      * Optional. The Google Cloud Storage URI to export the agent to.
      * Note: The URI must start with
      * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -608,8 +600,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Exporting agents to a URI is not implemented yet.
-     * This feature is coming soon.
      * Optional. The Google Cloud Storage URI to export the agent to.
      * Note: The URI must start with
      * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -632,8 +622,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Exporting agents to a URI is not implemented yet.
-     * This feature is coming soon.
      * Optional. The Google Cloud Storage URI to export the agent to.
      * Note: The URI must start with
      * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -653,8 +641,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Exporting agents to a URI is not implemented yet.
-     * This feature is coming soon.
      * Optional. The Google Cloud Storage URI to export the agent to.
      * Note: The URI must start with
      * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -670,8 +656,6 @@ private static final long serialVersionUID = 0L;
     }
     /**
      * <pre>
-     * Warning: Exporting agents to a URI is not implemented yet.
-     * This feature is coming soon.
      * Optional. The Google Cloud Storage URI to export the agent to.
      * Note: The URI must start with
      * "gs://". If left unspecified, the serialized agent is returned inline.
@@ -701,13 +685,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setParent(projectName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setParentWithProjectName(com.google.cloud.dialogflow.v2beta1.ProjectName value) {
       if (value == null) {
         return setParent("");
@@ -715,13 +692,6 @@ private static final long serialVersionUID = 0L;
       return setParent(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * ProjectName.parse(protoBuilder.getParent());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.dialogflow.v2beta1.ProjectName getParentAsProjectName() {
       java.lang.String str = getParent();
       if (str.isEmpty()) {
@@ -732,13 +702,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.dialogflow.v2beta1.ExportAgentRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * ProjectName.parse(protoObject.getParent());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.dialogflow.v2beta1.ProjectName getParentAsProjectName() {
     java.lang.String str = getParent();
     if (str.isEmpty()) {

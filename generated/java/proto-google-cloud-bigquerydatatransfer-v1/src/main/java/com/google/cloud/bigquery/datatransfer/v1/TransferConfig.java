@@ -2470,13 +2470,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(transferConfigNameOneof.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithTransferConfigNameOneof(com.google.cloud.bigquery.datatransfer.v1.TransferConfigNameOneof value) {
       if (value == null) {
         return setName("");
@@ -2484,13 +2477,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * TransferConfigNameOneof.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.bigquery.datatransfer.v1.TransferConfigNameOneof getNameAsTransferConfigNameOneof() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -2501,13 +2487,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.bigquery.datatransfer.v1.TransferConfig)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * TransferConfigNameOneof.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.bigquery.datatransfer.v1.TransferConfigNameOneof getNameAsTransferConfigNameOneof() {
     java.lang.String str = getName();
     if (str.isEmpty()) {

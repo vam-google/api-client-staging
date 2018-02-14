@@ -524,13 +524,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(appProfileName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithAppProfileName(com.google.bigtable.admin.v2.AppProfileName value) {
       if (value == null) {
         return setName("");
@@ -538,13 +531,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * AppProfileName.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.bigtable.admin.v2.AppProfileName getNameAsAppProfileName() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -555,13 +541,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.bigtable.admin.v2.GetAppProfileRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * AppProfileName.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.bigtable.admin.v2.AppProfileName getNameAsAppProfileName() {
     java.lang.String str = getName();
     if (str.isEmpty()) {
