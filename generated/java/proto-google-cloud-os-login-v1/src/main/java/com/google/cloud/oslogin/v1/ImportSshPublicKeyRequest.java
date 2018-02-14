@@ -893,13 +893,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setParent(userName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setParentWithUserName(com.google.cloud.oslogin.v1.UserName value) {
       if (value == null) {
         return setParent("");
@@ -907,13 +900,6 @@ private static final long serialVersionUID = 0L;
       return setParent(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * UserName.parse(protoBuilder.getParent());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.oslogin.v1.UserName getParentAsUserName() {
       java.lang.String str = getParent();
       if (str.isEmpty()) {
@@ -924,13 +910,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.oslogin.v1.ImportSshPublicKeyRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * UserName.parse(protoObject.getParent());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.oslogin.v1.UserName getParentAsUserName() {
     java.lang.String str = getParent();
     if (str.isEmpty()) {

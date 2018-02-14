@@ -112,7 +112,8 @@ private static final long serialVersionUID = 0L;
   /**
    * <pre>
    * Resource name of organization and inspectTemplate to be updated, for
-   * example `organizations/433245324/inspectTemplates/432452342`.
+   * example `organizations/433245324/inspectTemplates/432452342` or
+   * projects/project-id/inspectTemplates/432452342.
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -132,7 +133,8 @@ private static final long serialVersionUID = 0L;
   /**
    * <pre>
    * Resource name of organization and inspectTemplate to be updated, for
-   * example `organizations/433245324/inspectTemplates/432452342`.
+   * example `organizations/433245324/inspectTemplates/432452342` or
+   * projects/project-id/inspectTemplates/432452342.
    * </pre>
    *
    * <code>string name = 1;</code>
@@ -568,7 +570,8 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342`.
+     * example `organizations/433245324/inspectTemplates/432452342` or
+     * projects/project-id/inspectTemplates/432452342.
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -588,7 +591,8 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342`.
+     * example `organizations/433245324/inspectTemplates/432452342` or
+     * projects/project-id/inspectTemplates/432452342.
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -609,7 +613,8 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342`.
+     * example `organizations/433245324/inspectTemplates/432452342` or
+     * projects/project-id/inspectTemplates/432452342.
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -627,7 +632,8 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342`.
+     * example `organizations/433245324/inspectTemplates/432452342` or
+     * projects/project-id/inspectTemplates/432452342.
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -641,7 +647,8 @@ private static final long serialVersionUID = 0L;
     /**
      * <pre>
      * Resource name of organization and inspectTemplate to be updated, for
-     * example `organizations/433245324/inspectTemplates/432452342`.
+     * example `organizations/433245324/inspectTemplates/432452342` or
+     * projects/project-id/inspectTemplates/432452342.
      * </pre>
      *
      * <code>string name = 1;</code>
@@ -974,13 +981,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(inspectTemplateNameOneof.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithInspectTemplateNameOneof(com.google.privacy.dlp.v2beta2.InspectTemplateNameOneof value) {
       if (value == null) {
         return setName("");
@@ -988,13 +988,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * InspectTemplateNameOneof.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.privacy.dlp.v2beta2.InspectTemplateNameOneof getNameAsInspectTemplateNameOneof() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -1005,13 +998,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.privacy.dlp.v2beta2.UpdateInspectTemplateRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * InspectTemplateNameOneof.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.privacy.dlp.v2beta2.InspectTemplateNameOneof getNameAsInspectTemplateNameOneof() {
     java.lang.String str = getName();
     if (str.isEmpty()) {

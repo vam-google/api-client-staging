@@ -5,8 +5,7 @@ package com.google.cloud.dialogflow.v2beta1;
 
 /**
  * <pre>
- * The request message for
- * [Contexts.DeleteContext][google.cloud.dialogflow.v2beta1.Contexts.DeleteContext].
+ * The request message for [Contexts.DeleteContext][google.cloud.dialogflow.v2beta1.Contexts.DeleteContext].
  * </pre>
  *
  * Protobuf type {@code google.cloud.dialogflow.v2beta1.DeleteContextRequest}
@@ -278,8 +277,7 @@ private static final long serialVersionUID = 0L;
   }
   /**
    * <pre>
-   * The request message for
-   * [Contexts.DeleteContext][google.cloud.dialogflow.v2beta1.Contexts.DeleteContext].
+   * The request message for [Contexts.DeleteContext][google.cloud.dialogflow.v2beta1.Contexts.DeleteContext].
    * </pre>
    *
    * Protobuf type {@code google.cloud.dialogflow.v2beta1.DeleteContextRequest}
@@ -518,13 +516,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(contextName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithContextName(com.google.cloud.dialogflow.v2beta1.ContextName value) {
       if (value == null) {
         return setName("");
@@ -532,13 +523,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * ContextName.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.cloud.dialogflow.v2beta1.ContextName getNameAsContextName() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -549,13 +533,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.cloud.dialogflow.v2beta1.DeleteContextRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * ContextName.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.cloud.dialogflow.v2beta1.ContextName getNameAsContextName() {
     java.lang.String str = getName();
     if (str.isEmpty()) {

@@ -572,13 +572,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setLogName(logNameOneof.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setLogNameWithLogNameOneof(com.google.logging.v2.LogNameOneof value) {
       if (value == null) {
         return setLogName("");
@@ -586,13 +579,6 @@ private static final long serialVersionUID = 0L;
       return setLogName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * LogNameOneof.parse(protoBuilder.getLogName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.logging.v2.LogNameOneof getLogNameAsLogNameOneof() {
       java.lang.String str = getLogName();
       if (str.isEmpty()) {
@@ -603,13 +589,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.logging.v2.DeleteLogRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * LogNameOneof.parse(protoObject.getLogName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.logging.v2.LogNameOneof getLogNameAsLogNameOneof() {
     java.lang.String str = getLogName();
     if (str.isEmpty()) {

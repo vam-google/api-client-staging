@@ -1145,13 +1145,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setSubscription(subscriptionName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setSubscriptionWithSubscriptionName(com.google.pubsub.v1.SubscriptionName value) {
       if (value == null) {
         return setSubscription("");
@@ -1159,13 +1152,6 @@ private static final long serialVersionUID = 0L;
       return setSubscription(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * SubscriptionName.parse(protoBuilder.getSubscription());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.pubsub.v1.SubscriptionName getSubscriptionAsSubscriptionName() {
       java.lang.String str = getSubscription();
       if (str.isEmpty()) {
@@ -1173,13 +1159,6 @@ private static final long serialVersionUID = 0L;
       }
       return com.google.pubsub.v1.SubscriptionName.parse(str);
     }
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setSnapshot(snapshotName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setSnapshotWithSnapshotName(com.google.pubsub.v1.SnapshotName value) {
       if (value == null) {
         return setSnapshot("");
@@ -1187,13 +1166,6 @@ private static final long serialVersionUID = 0L;
       return setSnapshot(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * SnapshotName.parse(protoBuilder.getSnapshot());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.pubsub.v1.SnapshotName getSnapshotAsSnapshotName() {
       java.lang.String str = getSnapshot();
       if (str.isEmpty()) {
@@ -1204,13 +1176,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.pubsub.v1.SeekRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * SubscriptionName.parse(protoObject.getSubscription());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.pubsub.v1.SubscriptionName getSubscriptionAsSubscriptionName() {
     java.lang.String str = getSubscription();
     if (str.isEmpty()) {
@@ -1218,13 +1183,6 @@ private static final long serialVersionUID = 0L;
     }
     return com.google.pubsub.v1.SubscriptionName.parse(str);
   }
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * SnapshotName.parse(protoObject.getSnapshot());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.pubsub.v1.SnapshotName getSnapshotAsSnapshotName() {
     java.lang.String str = getSnapshot();
     if (str.isEmpty()) {

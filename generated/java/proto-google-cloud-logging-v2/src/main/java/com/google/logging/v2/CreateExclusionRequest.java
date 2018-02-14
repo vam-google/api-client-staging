@@ -785,13 +785,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setParent(parentNameOneof.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setParentWithParentNameOneof(com.google.logging.v2.ParentNameOneof value) {
       if (value == null) {
         return setParent("");
@@ -799,13 +792,6 @@ private static final long serialVersionUID = 0L;
       return setParent(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * ParentNameOneof.parse(protoBuilder.getParent());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.logging.v2.ParentNameOneof getParentAsParentNameOneof() {
       java.lang.String str = getParent();
       if (str.isEmpty()) {
@@ -816,13 +802,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.logging.v2.CreateExclusionRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * ParentNameOneof.parse(protoObject.getParent());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.logging.v2.ParentNameOneof getParentAsParentNameOneof() {
     java.lang.String str = getParent();
     if (str.isEmpty()) {
