@@ -15,9 +15,6 @@
  */
 package com.google.cloud.bigtable.admin.v2;
 
-import static com.google.cloud.bigtable.admin.v2.PagedResponseWrappers.ListSnapshotsPagedResponse;
-import static com.google.cloud.bigtable.admin.v2.PagedResponseWrappers.ListTablesPagedResponse;
-
 import com.google.api.gax.core.NoCredentialsProvider;
 import com.google.api.gax.grpc.GaxGrpcProperties;
 import com.google.api.gax.grpc.testing.LocalChannelProvider;

@@ -15,8 +15,6 @@
  */
 package com.google.cloud.bigtable.admin.v2.stub;
 
-import static com.google.cloud.bigtable.admin.v2.PagedResponseWrappers.ListAppProfilesPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.OperationCallable;
@@ -42,8 +40,10 @@ import com.google.bigtable.admin.v2.ListClustersResponse;
 import com.google.bigtable.admin.v2.ListInstancesRequest;
 import com.google.bigtable.admin.v2.ListInstancesResponse;
 import com.google.bigtable.admin.v2.PartialUpdateInstanceRequest;
+import com.google.bigtable.admin.v2.UpdateAppProfileMetadata;
 import com.google.bigtable.admin.v2.UpdateAppProfileRequest;
 import com.google.bigtable.admin.v2.UpdateClusterMetadata;
+import com.google.bigtable.admin.v2.UpdateInstanceMetadata;
 import com.google.iam.v1.GetIamPolicyRequest;
 import com.google.iam.v1.Policy;
 import com.google.iam.v1.SetIamPolicyRequest;
@@ -85,8 +85,10 @@ public abstract class BigtableInstanceAdminStub implements BackgroundResource {
     throw new UnsupportedOperationException("Not implemented: listInstancesCallable()");
   }
 
-  public UnaryCallable<Instance, Instance> updateInstanceCallable() {
-    throw new UnsupportedOperationException("Not implemented: updateInstanceCallable()");
+  public OperationCallable<PartialUpdateInstanceRequest, Instance, UpdateInstanceMetadata>
+      partialUpdateInstanceOperationCallable() {
+    throw new UnsupportedOperationException(
+        "Not implemented: partialUpdateInstanceOperationCallable()");
   }
 
   public UnaryCallable<PartialUpdateInstanceRequest, Operation> partialUpdateInstanceCallable() {
@@ -142,6 +144,11 @@ public abstract class BigtableInstanceAdminStub implements BackgroundResource {
 
   public UnaryCallable<ListAppProfilesRequest, ListAppProfilesResponse> listAppProfilesCallable() {
     throw new UnsupportedOperationException("Not implemented: listAppProfilesCallable()");
+  }
+
+  public OperationCallable<UpdateAppProfileRequest, AppProfile, UpdateAppProfileMetadata>
+      updateAppProfileOperationCallable() {
+    throw new UnsupportedOperationException("Not implemented: updateAppProfileOperationCallable()");
   }
 
   public UnaryCallable<UpdateAppProfileRequest, Operation> updateAppProfileCallable() {

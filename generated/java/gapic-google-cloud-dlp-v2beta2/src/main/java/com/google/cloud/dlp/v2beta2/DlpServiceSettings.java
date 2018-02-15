@@ -15,10 +15,6 @@
  */
 package com.google.cloud.dlp.v2beta2;
 
-import static com.google.cloud.dlp.v2beta2.PagedResponseWrappers.ListDeidentifyTemplatesPagedResponse;
-import static com.google.cloud.dlp.v2beta2.PagedResponseWrappers.ListDlpJobsPagedResponse;
-import static com.google.cloud.dlp.v2beta2.PagedResponseWrappers.ListInspectTemplatesPagedResponse;
-
 import com.google.api.core.ApiFunction;
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.GoogleCredentialsProvider;

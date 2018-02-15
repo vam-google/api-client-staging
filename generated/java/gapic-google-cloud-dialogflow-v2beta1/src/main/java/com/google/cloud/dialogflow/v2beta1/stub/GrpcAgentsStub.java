@@ -15,8 +15,6 @@
  */
 package com.google.cloud.dialogflow.v2beta1.stub;
 
-import static com.google.cloud.dialogflow.v2beta1.PagedResponseWrappers.SearchAgentsPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.core.BackgroundResourceAggregation;

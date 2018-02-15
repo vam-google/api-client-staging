@@ -15,8 +15,6 @@
  */
 package com.google.cloud.trace.v1;
 
-import static com.google.cloud.trace.v1.PagedResponseWrappers.ListTracesPagedResponse;
-
 import com.google.api.gax.core.NoCredentialsProvider;
 import com.google.api.gax.grpc.GaxGrpcProperties;
 import com.google.api.gax.grpc.testing.LocalChannelProvider;

@@ -15,7 +15,6 @@
  */
 package com.google.cloud.dataproc.v1;
 
-import static com.google.cloud.dataproc.v1.PagedResponseWrappers.ListClustersPagedResponse;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

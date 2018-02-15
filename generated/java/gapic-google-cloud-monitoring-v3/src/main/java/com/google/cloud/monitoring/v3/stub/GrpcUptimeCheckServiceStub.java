@@ -15,9 +15,6 @@
  */
 package com.google.cloud.monitoring.v3.stub;
 
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListUptimeCheckConfigsPagedResponse;
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListUptimeCheckIpsPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.core.BackgroundResourceAggregation;

@@ -15,10 +15,6 @@
  */
 package com.google.cloud.logging.v2.stub;
 
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListLogEntriesPagedResponse;
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListLogsPagedResponse;
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListMonitoredResourceDescriptorsPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.UnaryCallable;

@@ -15,8 +15,6 @@
  */
 package com.google.cloud.monitoring.v3;
 
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListGroupMembersPagedResponse;
-
 import com.google.api.MonitoredResource;
 import com.google.api.gax.core.NoCredentialsProvider;
 import com.google.api.gax.grpc.GaxGrpcProperties;

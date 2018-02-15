@@ -15,7 +15,6 @@
  */
 package com.google.cloud.trace.v1;
 
-import static com.google.cloud.trace.v1.PagedResponseWrappers.ListTracesPagedResponse;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

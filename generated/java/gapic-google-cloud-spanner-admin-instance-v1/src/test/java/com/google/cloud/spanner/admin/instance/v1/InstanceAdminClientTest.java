@@ -15,9 +15,6 @@
  */
 package com.google.cloud.spanner.admin.instance.v1;
 
-import static com.google.cloud.spanner.admin.instance.v1.PagedResponseWrappers.ListInstanceConfigsPagedResponse;
-import static com.google.cloud.spanner.admin.instance.v1.PagedResponseWrappers.ListInstancesPagedResponse;
-
 import com.google.api.gax.core.NoCredentialsProvider;
 import com.google.api.gax.grpc.GaxGrpcProperties;
 import com.google.api.gax.grpc.testing.LocalChannelProvider;

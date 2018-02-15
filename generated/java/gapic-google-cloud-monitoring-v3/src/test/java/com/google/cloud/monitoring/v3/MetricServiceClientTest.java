@@ -15,10 +15,6 @@
  */
 package com.google.cloud.monitoring.v3;
 
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListMetricDescriptorsPagedResponse;
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListMonitoredResourceDescriptorsPagedResponse;
-import static com.google.cloud.monitoring.v3.PagedResponseWrappers.ListTimeSeriesPagedResponse;
-
 import com.google.api.MetricDescriptor;
 import com.google.api.MonitoredResourceDescriptor;
 import com.google.api.gax.core.NoCredentialsProvider;

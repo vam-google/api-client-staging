@@ -15,8 +15,6 @@
  */
 package com.google.cloud.logging.v2.stub;
 
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListLogMetricsPagedResponse;
-
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
 import com.google.api.core.BetaApi;

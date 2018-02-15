@@ -15,7 +15,6 @@
  */
 package com.google.cloud.pubsub.v1;
 
-import static com.google.cloud.pubsub.v1.PagedResponseWrappers.ListTopicsPagedResponse;
 
 import com.google.pubsub.v1.ProjectName;
 import java.util.logging.Level;

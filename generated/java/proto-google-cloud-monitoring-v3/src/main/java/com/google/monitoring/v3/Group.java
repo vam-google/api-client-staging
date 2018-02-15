@@ -1139,13 +1139,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setName(groupName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setNameWithGroupName(com.google.monitoring.v3.GroupName value) {
       if (value == null) {
         return setName("");
@@ -1153,13 +1146,6 @@ private static final long serialVersionUID = 0L;
       return setName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * GroupName.parse(protoBuilder.getName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.monitoring.v3.GroupName getNameAsGroupName() {
       java.lang.String str = getName();
       if (str.isEmpty()) {
@@ -1167,13 +1153,6 @@ private static final long serialVersionUID = 0L;
       }
       return com.google.monitoring.v3.GroupName.parse(str);
     }
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setParentName(groupName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setParentNameWithGroupName(com.google.monitoring.v3.GroupName value) {
       if (value == null) {
         return setParentName("");
@@ -1181,13 +1160,6 @@ private static final long serialVersionUID = 0L;
       return setParentName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * GroupName.parse(protoBuilder.getParentName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.monitoring.v3.GroupName getParentNameAsGroupName() {
       java.lang.String str = getParentName();
       if (str.isEmpty()) {
@@ -1198,13 +1170,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.monitoring.v3.Group)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * GroupName.parse(protoObject.getName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.monitoring.v3.GroupName getNameAsGroupName() {
     java.lang.String str = getName();
     if (str.isEmpty()) {
@@ -1212,13 +1177,6 @@ private static final long serialVersionUID = 0L;
     }
     return com.google.monitoring.v3.GroupName.parse(str);
   }
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * GroupName.parse(protoObject.getParentName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.monitoring.v3.GroupName getParentNameAsGroupName() {
     java.lang.String str = getParentName();
     if (str.isEmpty()) {

@@ -15,9 +15,6 @@
  */
 package com.google.cloud.logging.v2;
 
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListExclusionsPagedResponse;
-import static com.google.cloud.logging.v2.PagedResponseWrappers.ListSinksPagedResponse;
-
 import com.google.api.gax.core.NoCredentialsProvider;
 import com.google.api.gax.grpc.GaxGrpcProperties;
 import com.google.api.gax.grpc.testing.LocalChannelProvider;

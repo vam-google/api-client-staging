@@ -15,8 +15,6 @@
  */
 package com.google.cloud.spanner.v1.stub;
 
-import static com.google.cloud.spanner.v1.PagedResponseWrappers.ListSessionsPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.ServerStreamingCallable;

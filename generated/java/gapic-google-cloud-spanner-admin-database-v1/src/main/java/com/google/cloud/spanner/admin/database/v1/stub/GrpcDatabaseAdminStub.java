@@ -15,8 +15,6 @@
  */
 package com.google.cloud.spanner.admin.database.v1.stub;
 
-import static com.google.cloud.spanner.admin.database.v1.PagedResponseWrappers.ListDatabasesPagedResponse;
-
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.core.BackgroundResourceAggregation;

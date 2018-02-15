@@ -15,11 +15,6 @@
  */
 package com.google.cloud.bigquery.datatransfer.v1.stub;
 
-import static com.google.cloud.bigquery.datatransfer.v1.PagedResponseWrappers.ListDataSourcesPagedResponse;
-import static com.google.cloud.bigquery.datatransfer.v1.PagedResponseWrappers.ListTransferConfigsPagedResponse;
-import static com.google.cloud.bigquery.datatransfer.v1.PagedResponseWrappers.ListTransferLogsPagedResponse;
-import static com.google.cloud.bigquery.datatransfer.v1.PagedResponseWrappers.ListTransferRunsPagedResponse;
-
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
 import com.google.api.core.BetaApi;

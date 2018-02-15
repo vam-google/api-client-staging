@@ -1283,13 +1283,6 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * protoBuilder.setTableName(tableName.toString());
-     * </code></pre>
-     */
-    @Deprecated
     public final Builder setTableNameWithTableName(com.google.bigtable.v2.TableName value) {
       if (value == null) {
         return setTableName("");
@@ -1297,13 +1290,6 @@ private static final long serialVersionUID = 0L;
       return setTableName(value.toString());
     }
     
-    /**
-     * @deprecated Use the following instead:
-     * <pre><code>
-     * TableName.parse(protoBuilder.getTableName());
-     * </code></pre>
-     */
-    @Deprecated
     public final com.google.bigtable.v2.TableName getTableNameAsTableName() {
       java.lang.String str = getTableName();
       if (str.isEmpty()) {
@@ -1314,13 +1300,6 @@ private static final long serialVersionUID = 0L;
     // @@protoc_insertion_point(builder_scope:google.bigtable.v2.ReadModifyWriteRowRequest)
   }
 
-  /**
-   * @deprecated Use the following instead:
-   * <pre><code>
-   * TableName.parse(protoObject.getTableName());
-   * </code></pre>
-   */
-  @Deprecated
   public final com.google.bigtable.v2.TableName getTableNameAsTableName() {
     java.lang.String str = getTableName();
     if (str.isEmpty()) {

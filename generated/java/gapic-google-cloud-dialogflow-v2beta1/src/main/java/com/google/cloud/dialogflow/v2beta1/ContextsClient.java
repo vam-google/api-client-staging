@@ -15,15 +15,21 @@
  */
 package com.google.cloud.dialogflow.v2beta1;
 
-import static com.google.cloud.dialogflow.v2beta1.PagedResponseWrappers.ListContextsPagedResponse;
-
+import com.google.api.core.ApiFunction;
+import com.google.api.core.ApiFuture;
+import com.google.api.core.ApiFutures;
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
+import com.google.api.gax.paging.AbstractFixedSizeCollection;
+import com.google.api.gax.paging.AbstractPage;
+import com.google.api.gax.paging.AbstractPagedListResponse;
+import com.google.api.gax.rpc.PageContext;
 import com.google.api.gax.rpc.UnaryCallable;
 import com.google.cloud.dialogflow.v2beta1.stub.ContextsStub;
 import com.google.cloud.dialogflow.v2beta1.stub.ContextsStubSettings;
 import com.google.protobuf.Empty;
 import java.io.IOException;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -630,5 +636,443 @@ public class ContextsClient implements BackgroundResource {
   @Override
   public boolean awaitTermination(long duration, TimeUnit unit) throws InterruptedException {
     return stub.awaitTermination(duration, unit);
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
+  }
+
+  public static class ListContextsPagedResponse
+      extends AbstractPagedListResponse<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    public static ApiFuture<ListContextsPagedResponse> createAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      ApiFuture<ListContextsPage> futurePage =
+          ListContextsPage.createEmptyPage().createPageAsync(context, futureResponse);
+      return ApiFutures.transform(
+          futurePage,
+          new ApiFunction<ListContextsPage, ListContextsPagedResponse>() {
+            @Override
+            public ListContextsPagedResponse apply(ListContextsPage input) {
+              return new ListContextsPagedResponse(input);
+            }
+          });
+    }
+
+    private ListContextsPagedResponse(ListContextsPage page) {
+      super(page, ListContextsFixedSizeCollection.createEmptyCollection());
+    }
+  }
+
+  public static class ListContextsPage
+      extends AbstractPage<ListContextsRequest, ListContextsResponse, Context, ListContextsPage> {
+
+    private ListContextsPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      super(context, response);
+    }
+
+    private static ListContextsPage createEmptyPage() {
+      return new ListContextsPage(null, null);
+    }
+
+    @Override
+    protected ListContextsPage createPage(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ListContextsResponse response) {
+      return new ListContextsPage(context, response);
+    }
+
+    @Override
+    public ApiFuture<ListContextsPage> createPageAsync(
+        PageContext<ListContextsRequest, ListContextsResponse, Context> context,
+        ApiFuture<ListContextsResponse> futureResponse) {
+      return super.createPageAsync(context, futureResponse);
+    }
+  }
+
+  public static class ListContextsFixedSizeCollection
+      extends AbstractFixedSizeCollection<
+          ListContextsRequest, ListContextsResponse, Context, ListContextsPage,
+          ListContextsFixedSizeCollection> {
+
+    private ListContextsFixedSizeCollection(List<ListContextsPage> pages, int collectionSize) {
+      super(pages, collectionSize);
+    }
+
+    private static ListContextsFixedSizeCollection createEmptyCollection() {
+      return new ListContextsFixedSizeCollection(null, 0);
+    }
+
+    @Override
+    protected ListContextsFixedSizeCollection createCollection(
+        List<ListContextsPage> pages, int collectionSize) {
+      return new ListContextsFixedSizeCollection(pages, collectionSize);
+    }
   }
 }

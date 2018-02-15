@@ -20,8 +20,6 @@ import com.google.api.resourcenames.ResourceName;
 import com.google.api.resourcenames.ResourceNameType;
 import java.io.IOException;
 import java.util.Map;
-import java.util.ArrayList;
-import java.util.List;
 
 // AUTO-GENERATED DOCUMENTATION AND CLASS
 @javax.annotation.Generated("by GAPIC protoc plugin")
@@ -62,40 +60,10 @@ public class UserName implements ResourceName {
     return of(user);
   }
 
-  public static String format(String user) {
-    return newBuilder()
-      .setUser(user)
-      .build()
-      .toString();
-  }
-
   public static UserName parse(String formattedString) {
-    if (formattedString.isEmpty()) {
-      return null;
-    }
     Map<String, String> matchMap =
         PATH_TEMPLATE.validatedMatch(formattedString, "UserName.parse: formattedString not in valid format");
     return of(matchMap.get("user"));
-  }
-
-  public static List<UserName> parseList(List<String> formattedStrings) {
-    List<UserName> list = new ArrayList<>(formattedStrings.size());
-    for (String formattedString : formattedStrings) {
-      list.add(parse(formattedString));
-    }
-    return list;
-  }
-
-  public static List<String> toStringList(List<UserName> values) {
-    List<String> list = new ArrayList<String>(values.size());
-    for (UserName value : values) {
-      if (value == null) {
-        list.add("");
-      } else {
-        list.add(value.toString());
-      }
-    }
-    return list;
   }
 
   public static boolean isParsableFrom(String formattedString) {

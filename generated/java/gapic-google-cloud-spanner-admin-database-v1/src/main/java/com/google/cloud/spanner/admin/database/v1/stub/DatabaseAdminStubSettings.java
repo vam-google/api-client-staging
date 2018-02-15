@@ -15,8 +15,6 @@
  */
 package com.google.cloud.spanner.admin.database.v1.stub;
 
-import static com.google.cloud.spanner.admin.database.v1.PagedResponseWrappers.ListDatabasesPagedResponse;
-
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
 import com.google.api.core.BetaApi;

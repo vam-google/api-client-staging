@@ -15,8 +15,6 @@
  */
 package com.google.cloud.dataproc.v1.stub;
 
-import static com.google.cloud.dataproc.v1.PagedResponseWrappers.ListClustersPagedResponse;
-
 import com.google.api.core.ApiFunction;
 import com.google.api.core.ApiFuture;
 import com.google.api.core.BetaApi;
